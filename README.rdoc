@@ -39,7 +39,8 @@ and you can post blog notes.
 
 An important part of the site will be its blog which will be available on every page.
 You'll be able to post any kind of comment/suggestion as you read about or test the
-library.  I'm hoping that this will make CS/CSW truly open-source.
+library.  I hope that this will encourage people to contribute to the library itself,
+and in any case I always enjoy talking about good coding and algorithm design.
 
 I am hoping that CSW will be "fun".  This means that you should enjoy browsing the library of
 problems and algorithms, and you should enjoy trying them out and reviewing their code.  I'm not
