@@ -1,0 +1,65 @@
+= CSW - An Interactive Library of Computer Science Algorithms for Ruby
+
+CSW is a Web application providing facts and interactive tools pertaining to my CS Ruby Gem.
+I wrote CS to teach myself how to write a real Ruby gem, and I'm writing CSW to learn how
+to create a fun Web application in Ruby.
+
+The source code for CS and CSW is in my two repositories on github:
+
+  www.github.com/dgoldhirsch/cs
+  www.github.com/dgoldhirsch/csw
+
+You are very welcome to clone these things and make suggestions for improvements
+and/or extensions.  I'd be very happy if there is any interest in the algorithms
+and in having such a library.  So far, I haven't found a library like this for Ruby
+(I'd like to hear about one if you find it--for one thing, I want to see how others have
+solved the same problems, but also I will try to contribute my solutions to the other library
+if they aren't already there).
+
+== CS Gem
+
+You can use the CS gem without CSW.  CS is described in detail in the README in its github source respository,
+but here are the essential things you would need in order to use it.  First, install the gem from github:
+
+  gem sources -a http://gems.github.com
+  gem install dgoldhirsch-cs
+
+Now you should be able to include it in your Ruby code.  There is a README.rdoc that comes
+with the gem, but here is a sample of how to call one of the library methods:
+
+  require 'rubygems' # Or, plan on using the -rubygems option of ruby
+  require 'cs'
+  y = CS::fibonacci(6) # returns 8 which is F(6) = 3 + 5
+
+== CSW
+
+The CSW Web site contains the on-line documentation for CS as well as interactive tools
+in which you can run the algorithms, you can review the existing unit test cases (and run them), and
+and you can post blog notes.  I'm hoping to integrate access to the blog in a sufficiently
+convenient way so that (say) if you encounter an unexpected result--or, simply, if you
+think of an improvement--while running the algorithm you can easily post a note about it,
+and CS/CSW will become a real, open-source project.
+
+I am hoping that CSW will be "fun".  This means that you should enjoy browsing the library of
+problems and algorithms, and you should enjoy trying them out and reviewing their code.  I'm not
+sure how much fun any algorithm library can be, really, but I'm doing my best at it.
+
+CSW is still under development.  When/if I get it hosted, I'll update this document.  At
+that point, I'll be learning how to get the Web site into the likely hit-list of Google
+(as everyone knows, there's a lot more to professional computer programming than writing code).
+
+== Boston Ruby Users Group (www.bostonrb.org)
+
+This is a plug for the Boston Ruby Users Group which I joined when I got laid off from my
+Java at a mid-sized, respected corporation.  I was told that the Ruby/Rails community was far
+more friendly and welcoming than I was used to, and that if I came I'd again enjoy being a
+programmer.  And, I have to say that I found this to be true.  I am enjoying myself enormously
+while learning lots of interesting things from people who seem glad to welcome me as a colleague.
+The difference between this and what I had come to accept as the daily lot of a professional,
+senior software engineer is enormous.
+
+It's great to talk with programmers who really care about the quality of their work.
+
+== Copyright
+
+Copyright (c) 2009 David C. Goldhirsch. See LICENSE for details.
