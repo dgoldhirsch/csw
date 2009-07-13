@@ -1,0 +1,270 @@
+*|body {
+  margin: 0;
+  padding: 0 16px;
+  background: white none repeat scroll 0%;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 11px;
+  line-height: 1.7em;
+}
+*|h1, *|h2, *|h3, *|h4 {
+  margin: 0;
+  background: #ffffaa none repeat scroll 0% 50%;
+  color: blue;
+  font-family: "Arial Unicode MS",Verdana,Arial,Helvetica,sans-serif;
+}
+*|h1 {
+  font-size: 1.5em;
+}
+*|h2, *|h3, *|h4 {
+  margin-top: 1em;
+}
+*|h3 {
+  font-size: 1.25em;
+}
+*|a {
+  color: #003399;
+  text-decoration: none;
+}
+*|a:hover {
+  border-bottom: 1px solid #63abe9;
+  color: #000066;
+}
+*|td *|a {
+  background: transparent none repeat scroll 0%;
+  color: #003399;
+  text-decoration: none;
+}
+*|.section-title *|a {
+  background: transparent none repeat scroll 0%;
+  color: #eeeeee;
+  text-decoration: none;
+}
+*|td {
+  font-size: 11px;
+}
+*|div#index {
+  margin: 0 -16px;
+  padding: 0 0.7em;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+*|div#index *|a {
+  white-space: nowrap;
+}
+*|div#index *|a:hover {
+  font-weight: bold;
+}
+*|div#index *|.section-bar {
+  margin: 0 -0.7em 0.5em;
+  padding: 0.3em 0.7em;
+  background: #cccccc none repeat scroll 0%;
+  font-size: 1.3em;
+}
+*|div#classHeader, *|div#fileHeader {
+  border-bottom: 3px solid #000066;
+  margin: 0 -16px;
+  padding: 0.5em 1.5em;
+  width: auto;
+  color: white;
+}
+*|div#classHeader *|a, *|div#fileHeader *|a {
+  background: inherit inherit inherit inherit inherit;
+  color: white;
+}
+*|div#classHeader *|td, *|div#fileHeader *|td {
+  background: inherit inherit inherit inherit inherit;
+  color: white;
+}
+*|div#fileHeader {
+  background: #005577 none repeat scroll 0%;
+}
+*|div#classHeader {
+  background: #004488 none repeat scroll 0%;
+}
+*|.header-table *|td {
+  border:  none;
+  vertical-align: baseline;
+}
+*|.class-name-in-header {
+  font-size: 2.3em;
+  font-weight: bold;
+  font-family: "Arial Unicode MS",Verdana,Arial,Helvetica,sans-serif;
+}
+*|div#bodyContent {
+  margin: 0;
+  padding: 0;
+}
+*|div#description {
+  border: 1px solid #dddddd;
+  margin: 2em 0 0;
+  padding: 1em 1em 0.5em;
+  background: #f8f8f8 none repeat scroll 0%;
+}
+*|div#description *|h1, *|h2, *|h3, *|h4, *|h5, *|h6 {
+  background: transparent none repeat scroll 0%;
+  color: #112255;
+}
+*|div#description *|h1 {
+  border-bottom: 1px solid #dddddd;
+  color: #004663;
+  padding-bottom: 0.25em;
+  font-weight: normal;
+}
+*|div#validator-badges {
+  text-align: center;
+}
+*|div#validator-badges *|img {
+  border:  none;
+}
+*|div#copyright {
+  padding: 0.5em 2em;
+  background: #efefef none repeat scroll 0%;
+  color: #333333;
+  font-family: sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: normal;
+  font-size-adjust: none;
+  font-stretch: normal;
+  margin-top: 5em;
+  margin-bottom: 0;
+}
+*|table.header-table {
+  color: white;
+  font-size: 0.8em;
+}
+*|.type-note {
+  font-size: 0.8em;
+  color: #dedede;
+}
+*|.xxsection-bar {
+  padding: 3px;
+  background: #eeeeee none repeat scroll 0%;
+  color: #333333;
+}
+*|.section-bar {
+  border-bottom: 1px solid #999999;
+  color: #333333;
+}
+*|.section-title {
+  border: 1px solid #999999;
+  padding: 3px;
+  background: #7799aa none repeat scroll 0%;
+  color: #eeeeee;
+  margin-top: 2em;
+  margin-left: -30px;
+}
+*|table {
+  border-collapse: collapse;
+}
+*|td {
+  border-bottom: 1px solid #eeeeee;
+  padding: 4px 20px 4px 0;
+}
+*|.top-aligned-row {
+  vertical-align: top;
+}
+*|.bottom-aligned-row {
+  vertical-align: bottom;
+}
+*|.context-row {
+}
+*|.context-item-name {
+  font-family: monospace;
+  font-weight: bold;
+  color: black;
+}
+*|.context-item-value {
+  color: #444488;
+}
+*|.context-item-desc {
+  color: #333333;
+}
+*|.method-detail {
+  border: 1px solid #dddddd;
+  padding: 0;
+  background: #f8f8f8 none repeat scroll 0%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+*|.method-heading {
+  border-bottom: 1px solid #cccccc;
+  padding: 0.2em 0.5em 0;
+  background: #dddddd none repeat scroll 0%;
+  color: black;
+}
+*|.method-signature {
+  background: inherit inherit inherit inherit inherit;
+  color: black;
+}
+*|.method-name {
+  font-weight: bold;
+}
+*|.method-args {
+  font-style: italic;
+}
+*|.method-description {
+  padding: 0 0.5em;
+}
+*|a.source-toggle {
+  font-size: 0.9em;
+}
+*|div.method-source-code {
+  border: 1px solid #999999;
+  margin: 1em 0;
+  padding: 0 1em;
+  background: black none repeat scroll 0%;
+  overflow: hidden;
+  color: #ffdead;
+}
+*|div.method-source-code *|pre {
+  overflow: hidden;
+  color: #aaaaaa;
+  font-family: "Lucida Console","Bitstream Vera Sans Mono",monospace;
+}
+*|.standalone-code {
+  background: #221111 none repeat scroll 0%;
+  overflow: hidden;
+  color: #ffdead;
+}
+*|.ruby-constant {
+  background: transparent none repeat scroll 0%;
+  color: #dd0000;
+  font-weight: bold;
+}
+*|.ruby-keyword {
+  background: transparent none repeat scroll 0%;
+  color: #ff6600;
+  font-weight: bold;
+}
+*|.ruby-ivar {
+  background: transparent none repeat scroll 0%;
+  color: white;
+}
+*|.ruby-operator {
+  background: transparent none repeat scroll 0%;
+  color: #00ffea;
+}
+*|.ruby-identifier {
+  background: transparent none repeat scroll 0%;
+  color: white;
+}
+*|.ruby-node {
+  background: transparent none repeat scroll 0%;
+  color: #fe6e34;
+}
+*|.ruby-comment {
+  background: transparent none repeat scroll 0%;
+  color: #0e7e92;
+  font-weight: bold;
+}
+*|.ruby-regexp {
+  background: transparent none repeat scroll 0%;
+  color: #ffa07a;
+}
+*|.ruby-value {
+  background: transparent none repeat scroll 0%;
+  color: #05dfdc;
+}

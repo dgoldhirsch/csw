@@ -1,0 +1,8 @@
+Thread ID: 21128100
+Total: 0.031000
+
+ %self     total     self     wait    child    calls  name
+ 51.61      0.03     0.02     0.00     0.01       30  Array#each
+ 48.39      0.01     0.01     0.00     0.00      505  String#include?
+
+
