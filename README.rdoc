@@ -35,10 +35,11 @@ with the gem, but here is a sample of how to call one of the library methods:
 
 The CSW Web site contains the on-line documentation for CS as well as interactive tools
 in which you can run the algorithms, you can review the existing unit test cases (and run them), and
-and you can post blog notes.  I'm hoping to integrate access to the blog in a sufficiently
-convenient way so that (say) if you encounter an unexpected result--or, simply, if you
-think of an improvement--while running the algorithm you can easily post a note about it,
-and CS/CSW will become a real, open-source project.
+and you can post blog notes.
+
+An important part of the site will be its blog which will be available on every page.
+You'll be able to post any kind of comment/suggestion as you read about or test the
+library.  I'm hoping that this will make CS/CSW truly open-source.
 
 I am hoping that CSW will be "fun".  This means that you should enjoy browsing the library of
 problems and algorithms, and you should enjoy trying them out and reviewing their code.  I'm not
