@@ -2,91 +2,74 @@
 <html><head><title>CS Overview</title>
 
 <link rel="stylesheet" href="cs.css" type="text/css" media="screen"></head><body class="method-source-code">
-<h1>Overview of The Computer Science Library for Ruby</h1>
-
-I created CS to teach myself Ruby and to learn how to make decent a
-Ruby Gem
-and a Rails application.&nbsp;
-Maybe it will be of interest to other programmers--that would be great,
-because the more people who contribute to it and who review its
-algorithms, the better and more useful it would be.&nbsp; Also, I
-always had a lot of fun thinking about computer science and programming
-in general.&nbsp; It seems to me that the life of a professional
-software engineer is often woefully short on "fun," being filled
-instead with...well, there it is.&nbsp; I am having a great time
-writing algorithms in Ruby, pair-programming with people who are
-interested in such things, and in writing descriptions of algorithms
-and the insights one can get from coding them.&nbsp; I'm doing what I
-always did enjoy doing, which is programming, analyzing, and finding
-fun ways to talk about these things with other programmers.<br>
-
-<br>
-
-The source code for the library (CS) and the Web application that describes it (CSW) are on github:<br>
-
-&nbsp;&nbsp;&nbsp; git://github.com/dgoldhirsch/{cs, csw}.git<br>
-
-<br>
-
-In addition, CS is available as a Ruby Gem from github:<br>
-
-<div class="method-source-code">    gem sources -a http://gems.github.com<br>    gem install dgoldhirsch-cs<br></div>
-
-<br>
-
-<h1>Contributions and Comments are Wanted!</h1>
-
-First, please feel free to look at my code on github.&nbsp; With luck,
-there will be less reason to do so once I have the CSW site up and
-running.&nbsp; I would be grateful for any new contributions for
-algorithms and/or suggestions for improving the code I have
-already.&nbsp; If you clone the repository and make some changes, just
-drop me an e-mail and I'll review what you have and try to pull it into
-my master repository.<br>
-
-<br>
-
-If I can do what I want to do, the CSW site will have pages for the
-different computer science problems solved by CS, and a blog that is
-available on all of those pages.&nbsp; That way, you can read and try
-one of the algorithms, review its code, and simply post a blog entry
-with suggestions, observations, or new contributions.&nbsp; If I can
-make this work in a nice way, it will have the advantage that everyone
-else can see what you are suggesting as well as what I end up doing
-with it.<br>
-
-<br>
-
-There are already plenty of Web sites describing algorithms.&nbsp; And,
-there are probably lots of libraries implementing algorithms.&nbsp;
-What I haven't seen yet is a Web site that combines fun and useful
-information about the algorithms with an interactive tool that lets you
-run the code and/or profile it.&nbsp; That's what I'd like to provide
-in the CSW site.<br>
-
-<br>
-
-
-<h1>Using the CS Methods<br></h1>
-
-
-The algorithms are (currently) implemented as module methods, so that you can use them without polluting the Ruby classes, e.g.:<br>
-
-<script name="a" src="http://gist.github.com/145109.js"></script>&nbsp;
-<div class="method-source-code">require 'rubygems'<br>
-require 'cs'&nbsp;&nbsp; # brings in module methods for everything in CS<br>
-y = CS::fibonacci(6) # y = 8
+<h1>Web Interface to the CS Gem Computer Science Library for Ruby</h1>
+<p>
+CSW is a Ruby Web application providing information for--and interaction with--the CS Ruby
+Gem.  I'm writing CSW to teach myself how to write a Ruby Web application, just as I wrote
+CS to learn how to write a decent library in Ruby.  If CS and CSW are of interest to other programmers,
+that'd be great, too.
+<p>
+The CS gem contains algorithms for computer science and math.  (Well, it will contain such
+algorithms.  Currently, it contains only a couple of methods to compute the Fibonacci numbers.)
+I chose this because it gives me a chance to work on small Ruby projects while accumulating
+a library of non-trivial size.  Supporting such a library presents real-world challenges not
+usually addressed in computer science textbooks, such as how best to organize different implementations
+for purpose of varying performance conditions.
+<p>
+Aside from its value as a teaching tool for myself, CS and CSW give me a chance to do something
+often (and sadly) missing from the daily life of a professional programmer:  I have FUN
+working on it.  I hope that I can create both CS and CSW in a way that is fun for others
+to use, too, because (in my humble opinion) professional software engineering can be and should be fun.
+<p>
+<h1>Structure of the CSW site</h1>
+<p>
+When fully fledged, CSW will have the API documentation for the CS library.  It will also have
+pages devoted to each of the problems solved by the library, and interactive tools for testing the
+library methods.  A blog will be available on all pages, so that users can easily send me
+comments/corrections/suggestions.  The blog is an essential element of CSW, because it provides
+the easiest way to keep CS fresh and to help it evolve.
+<p>
+The finished version will have navigation available for all the algorithm/problem pages.
+I haven't gotten that far yet, however.  So, here's how to get at the one algorithm for
+which we have a (primative) page:
+<p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="fibonacci/show">CS::fibonacci</a>
+<p>
+<h1>Source Code in Github</h1>
+<p>
+The pre-skeletal version of CSW was implemented in Sinatra, mostly because I wanted some practice
+creating a Rack-bare Web application.  Once that worked, I ported it to Rails because I think that
+Rails has better amenities for such things as a blog.
+The source code for the Rails implementation is here:
+<p>
+&nbsp;&nbsp;&nbsp; <a href="git://github.com/dgoldhirsch/cs.git">git://github.com/dgoldhirsch/cs.git</a>
+<p>
+<h1>Overview of The CS Gem -- A Library for Computer Science in Ruby</h1>
+<p>
+Details about CS and how to use its methods are available in the README of its own
+github repository:
+<p>
+&nbsp;&nbsp;&nbsp; <a href="git://github.com/dgoldhirsch/csw.git">"git://github.com/dgoldhirsch/csw.git</a>
+<p>
+To use the gem in your Ruby code, you simply have to install it from Github:
+<p>
+<div class="method-source-code">
+  gem sources -a http://gems.github.com<br>
+  gem install dgoldhirsch-cs<br>
 </div>
-
+<p>
+Here are some highlights from that document, to save you the trouble of browsing the repository.
+The algorithms are (currently) implemented as module methods, so that you can use them without polluting the Ruby classes, e.g.:<
+<p>
+<script name="a" src="http://gist.github.com/145109.js"></script>
+<p>
 The same calls are available as an instance method mixed into the Ruby
 Integer class, if you don't care about extending the meaning of the
-standard classes:<br>
-
-<div class="method-source-code">require 'rubygems'<br>
-require 'cs_mix_fibonacci'&nbsp;&nbsp; # brings in 'cs' plus mix-in for this one method<br>
-y = 6.fibonacci&nbsp;&nbsp;&nbsp; # y = 8
-</div>
-
+standard classes:
+<p>
+<script src="http://gist.github.com/146330.js"></script>
+<p>
 You get the entire collection of module methods by requiring
 'cs'.&nbsp; For the instance mix-ins, you must require them per
 algorithm.&nbsp; My thinking on this is that you might have your own
@@ -94,88 +77,45 @@ extensions to standard classes, and you wouldn't appreciate having
 my Matrix.lower_right extension slam into something you already
 had with the same name.  Especially if you didn't know that I had
 a lower_right extension in the first place.
-<br>
-
-<br>
-
-<h1>May We See An Algorithm, Please?<br>
-</h1>
-
-After all this talk about "the library" and "the algorithms," you might
-think that I've provided lots of these.&nbsp; At the current time, the
-entire CS library consists of two--count' em, two--algorithms that
-compute the Fibonacci numbers.&nbsp; Not much of a contribution to the
-literature of computer science, eh?&nbsp; Well, I'm just starting.
-<br>
-
-
-<br>
-
-
-When (if) the library gets big, you'll have to navigate around to find
-the problem you're interested in and any solutions for it in the
-library.<br>
-
-
-For now, since there's only one problem solved by the library, please let me save you the trouble:<br>
-
-
-<br>
-
-
-<h3 class="method-heading">Problem FIB: Compute F(n), the nth Fibonacci
+<p>
+<h1>Fibonacci Numbers</h1>
+<p>
+At the current time, the
+entire CS library consists of only algorithms, each of which solves the one
+problem of computing the Fibonacci numbers:
+<p>
+<h3 class="method-heading">Problem: Compute F(n), the nth Fibonacci
 number</h3>
-
-
+<p>
 The Fibonacci numbers are the integers F(0), F(1), ... where F(0) is 0,
 F(1) is 1, and F(k &gt; 1) = F(k - 1) + F(k - 2). Here are the first
 few numbers, starting with F(0):
 <pre>(0, 1, 1, 2, 3, 5, 8, 13, ...)</pre>
-
-
+<p>
 <h4> Algorithm FIB_A: Compute F(n) using simple addition</h4>
-
-
 This is the obvious method of adding F(1) + F(2) + ... + F(n - 1)
 to get F(n), for any n &gt; 0.
 Here's my implementation (with the RDoc stripped off):
-<div class="method-source-code">def self.additive_fibonacci(n)<br>&nbsp; return 0 if n &lt;= 0<br>&nbsp;&nbsp;
-  b = 0 # F(0)<br>&nbsp;&nbsp;
-  result = 1 # F(1)<br>&nbsp;&nbsp;
-  (n - 1).times do<br>&nbsp;&nbsp;&nbsp;&nbsp;
-    a = b          # F(k - 2)<br>&nbsp;&nbsp;&nbsp;&nbsp;
-    b = result    # F(k - 1)<br>&nbsp;&nbsp;&nbsp;&nbsp;
-    result += a  # F(k)<br>&nbsp;&nbsp;
-  end<br>&nbsp;&nbsp;
-  return result<br>
-end
-</div>
-
-
-Analysis: This works fine in Ruby
+<p>
+  <script src="http://gist.github.com/146332.js"></script>
+<p>
+<B>Analysis:</B> This works fine in Ruby
 for small values of n (say, under 5,000), but slows down thereafter.
-At first, I tried a fancier version of this, using <span style="font-weight: bold;">inject</span> (I'm always glad to find a
+At first, I tried a fancier version of this, using
+<span style="font-weight: bold;">inject</span> (I'm always glad to find a
 use for inject!)  But, it performed noticeably worse than the simple
 loop shown above.  I didn't take the time to figure out why this is the
 case.  I'm too new to Ruby to be sure, but I am wondering if it is just
 the overhead of calling methods and collecting elements in the collection vs. straight calls to
-the C code behind the Ruby interpreter.<br>
-
-<br>
-
-Useful take-away:  My training as a Smalltalker suggested that something
+the C code behind the Ruby interpreter.
+<p>
+<B>Useful take-away:</B>  My training as a Smalltalker suggested that something
 like inject should in fact be used if it simplified the logic or made
 it more obvious to the reader.  That is, unless and until
 performance-testing proves that another implementation is necessary.
-That was the case, here.&nbsp; So, sometimes, you really should make the code less elegant if it helps performance.<br>
-
-
-<br>
-
-
+That was the case, here.  So, sometimes, you really should make the code less elegant if it helps performance.
+<p>
 <h4>Algorithm FIB_M: Compute F(n) using matrix exponentiation</h4>
-
-
 This algorithm makes use of the interesting little matrix M = [[0, 1],
 [1, 1]]
 (in which [0, 1] is the top row and [1, 1] is the bottom row). The
@@ -184,29 +124,10 @@ fact about M is that the lower right element of M**k contains F(k + 1).
 For example, M**1 (which is M itself) contains F(2) which is 1.
 M**2 is [[1, 1], [1, 2]] which has F(3), and M**3 is [[1, 2], [2, 3]]
 which
-has F(4), and so on.
-<br>
-
-
-<br>
-
-Here's the code for FIB_M (comments mostly stripped away):<br>
-
-
-<div class="method-source-code">def self.matrix_fibonacci(n)<br>&nbsp; return 0 if n &lt;= 0 # F(0)<br>&nbsp;&nbsp;
-
-return 1 if n == 1 # F(1)<br>&nbsp;&nbsp;
-
-# To get F(n &gt; 1), compute M**(n - 1) and extract the lower right
-element.<br>&nbsp;&nbsp;
-   return CS::lower_right(M**(n - 1))<br>
-end<br>
-<br>
-private<br>
-<br>
-M = Matrix[[0, 1], [1, 1]]<br>
-</div>
-
+has F(4), and so on.  Here's the code:
+<p>
+  <script src="http://gist.github.com/146331.js"></script>
+<p>
 You will notice that this seems to multiply M by itself n - 1 times,
 and you might be wondering how on earth this could perform better than
 the simple loop implementation.&nbsp;&nbsp; In fact, this is not my
@@ -214,8 +135,8 @@ first implementation.&nbsp; My first implementation tried to be a lot
 smarter, using squares of squares to compute M**n in O(log n)
 time.&nbsp; For example, M**19 is computed by multiplying M by
 itself 5 times: ((M**2)**2) * (M**3). That's a heck of a lot better
-than having to do it 19 times!<br>
-<br>
+than having to do it 19 times!
+<p>
 Remembering the old saw about never optimizing until one has run a
 profiler, I coded FIB_M as well as the square-of-squares version, and I
 used Ruby's Benchmark.bmbm method to compare the result.&nbsp; What I
@@ -225,8 +146,8 @@ unless one imagined that a similar (and better) optimization was
 already coded in the standard Ruby library for Matrix.&nbsp; And, that
 turned out to be the case--in fact, Matrix.** implements the same
 square-of-square idea I had, but (apparently) it does so better than I
-did (*).<br>
-<br>
+did (*).
+<p>
 
 (*)&nbsp; I haven't yet analyzed the profile of my square-of-squares
 implementation vs. that of the standard Matrix.** operation.&nbsp; I
@@ -234,35 +155,20 @@ assume that my implementation was relatively ineffecient in its use of
 object code (vs simple code that calls directly to the Ruby C
 library).&nbsp; It seemed sufficient to recognize that the Ruby
 standard library was better than I was, at least for now, and go with
-the FIB_M algorithm.<br>
-
-<br>
-
-Useful take-aways:&nbsp; Use benchmarking and profiling to figure out
+the FIB_M algorithm.
+<p>
+<B>Useful take-aways:</B>&nbsp; Use benchmarking and profiling to figure out
 how/why your algorithm performs the way it does.&nbsp; Don't
 second-guess the profiler--your imagined optimization may be solving
 the wrong problem.&nbsp; If you don't understand the benchmark results,
-dig into the libraries you are using for clues.<br>
-
-
-<br>
-
-
-References:  The matrix M with its ability to generate F(n) is
+dig into the libraries you are using for clues.
+<p>
+<B>References:</B>  The matrix M with its ability to generate F(n) is
 described in <span style="font-style: italic;">Introduction To
 Algorithms (Second Edition),</span> by Cormen, Leiserson, Rivest, and
 Stein, MIT Press, in exercise 3-31 on pages 902 and 903.  The exercise
 suggests that there is an O(log n) algorithm for computing F(n) with
-the matrix, and FIB_M is my solution to the exercise.<br>
-<br>
-
-<h1>Try the Interactive Library Tester!</h1>
-Want to try running the matrix and/or addition algorithms?  My half-baked
-Web page for testing them is here:
-<br>
-<br>
-<%= link_to "Interactive Fibonacci Page", {:controller => 'fibonacci', :action => :show} %>
-<br>
-<br>
-that I'm still a beginner with ERB files, so this stuff is pretty rudimentary visually.
+the matrix, and FIB_M is my solution to the exercise.
+<p>
+<B>Copyright (c) 2009 David C. Goldhirsch</B>
 </body></html>
