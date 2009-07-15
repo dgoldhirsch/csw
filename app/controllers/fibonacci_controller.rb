@@ -11,7 +11,7 @@ class FibonacciController < ApplicationController
     self.set_algorithm_variables
     @n = params[:n]
     if(@n)
-      self.set_result_variables
+      @result = CS::fibonacci(@n.to_i, @algorithm_name)
     end
     respond_to do |f|
       f.html
@@ -26,13 +26,5 @@ class FibonacciController < ApplicationController
       @algorithm_name = :matrix
       @matrix_checked = "CHECKED"
     end
-  end
-
-  def set_result_variables
-    puts "@algorithm " + @algorithm
-    puts "@n.to_i " + @n.to_i.to_s
-    @result = CS::fibonacci(@n.to_i, @algorithm_name)
-    puts "@result " + @result.to_s
-  end
-
+  end 
 end
