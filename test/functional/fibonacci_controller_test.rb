@@ -1,18 +1,11 @@
 require 'test_helper'
 
 class FibonacciControllerTest < ActionController::TestCase
-  context "GET" do
+  context "New" do
     setup do
-      get :show
+      get :new
     end
-    should_not_assign_to :n
-    should_assign_to :matrix_checked
-    should_not_assign_to :addition_checked
-    should_not_assign_to :result
-    should_render_template :show
-    should "assignments" do
-       assert_equal :matrix, assigns(:algorithm_name)
-    end
+    should_render_template :new
   end
 
   context "GET/n?algorithm=:matrix" do
