@@ -1,9 +1,8 @@
 Thread ID: 21128100
-Total: 0.047000
+Total: 0.032000
 
  %self     total     self     wait    child    calls  name
- 34.04      0.02     0.02     0.00     0.00      505  Proc#call-1
- 34.04      0.02     0.02     0.00     0.00      109  Rack::Lint::Assertion#assert
- 31.91      0.01     0.01     0.00     0.00        3  IO#write
+ 50.00      0.03     0.02     0.00     0.02      107  Proc#call
+ 50.00      0.02     0.02     0.00     0.00        6  Array#map
 
 
