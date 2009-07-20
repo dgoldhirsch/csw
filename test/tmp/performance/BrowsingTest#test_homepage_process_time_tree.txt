@@ -36,66 +36,6 @@ cfn=ActionController::Request::parameters-37734212
 calls=1 1279
 1279 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::Assertion::assert-37738404
-16 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=1 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=9 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=12 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=14 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=4 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=3 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=3 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=1 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=1 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=24 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=3 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=1 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=1 17
-17 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Proc::call-37734212
-calls=32 17
-17 16
-
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Time::initialize-37738404
 0 0
@@ -168,18 +108,6 @@ cfn=Rack::Utils::HeaderHash::[]=-37734212
 calls=1 68
 68 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/layout.erb
-fn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47layout46erb-37738404
-0 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::concat-37734212
-calls=30 29
-29 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::to_s-37734212
-calls=1 26
-26 0
-
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 fn=<Class::ActionController::Base>::rescue_handlers-37738404
 1 0
@@ -250,7 +178,7 @@ fn=ActionController::Base::send_response-37738404
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 cfn=ActionController::Base::response-37734212
 calls=2 532
-532 0
+532 15
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/response.rb
 cfn=ActionController::Response::prepare!-37734212
 calls=1 531
@@ -274,7 +202,7 @@ calls=1 98
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb
 cfn=ActionController::RewindableInput::call-37734212
 calls=1 93
-93 16
+93 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Kernel::dup-37734212
 calls=1 91
@@ -350,11 +278,11 @@ calls=1 71
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Array::map-37738404
-0 16
+0 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Proc::call-37734212
 calls=336 58
-58 0
+58 16
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Hash::delete-37738404
@@ -450,7 +378,7 @@ fn=ActionController::Dispatcher::dispatch-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb
 cfn=ActionController::Rescue::ClassMethods::call_with_exception-37734212
 calls=1 91
-91 16
+91 31
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/callbacks.rb
 cfn=ActiveSupport::Callbacks::run_callbacks-37734212
 calls=2 96
@@ -486,7 +414,7 @@ fn=ActiveRecord::QueryCache::ClassMethods::cache-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb
 cfn=ActiveRecord::ConnectionAdapters::QueryCache::cache-37734212
 calls=1 9
-9 16
+9 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::blank?-37734212
 calls=1 6
@@ -799,6 +727,26 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Kernel::String-37734212
 calls=1 76
 76 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::check_headers-37738404
+393 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Kernel::class-37734212
+calls=1 395
+395 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Hash::each-37734212
+calls=1 398
+398 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::Assertion::assert-37734212
+calls=1 395
+395 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Module::to_s-37734212
+calls=1 395
+395 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/utils.rb
 fn=<Module::Rack::Utils>::parse_nested_query-37738404
@@ -1132,6 +1080,14 @@ fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=IO::write-37738404
 0 0
 
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/performance.rb
+fn=ActiveSupport::Testing::Performance::Profiler::run-37738404
+177 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Kernel::__send__-37734212
+calls=1 57
+57 31
+
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Hash::merge-37738404
 0 0
@@ -1274,7 +1230,7 @@ calls=1 498
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Kernel::__send__-37734212
 calls=1 498
-498 32
+498 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb
 fn=ActionController::Rescue::log_error-37738404
@@ -1283,6 +1239,10 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/deprec
 cfn=<Module::ActiveSupport::Deprecation>::silence-37734212
 calls=1 80
 80 16
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::InputWrapper::initialize-37738404
+249 0
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::String-37738404
@@ -1414,7 +1374,7 @@ fn=Mutex::synchronize-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb
 cfn=ActionController::Failsafe::call-37734212
 calls=1 11
-11 16
+11 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb
 fn=ActionController::ParamsParser::call-37738404
@@ -1422,7 +1382,7 @@ fn=ActionController::ParamsParser::call-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb
 cfn=Rack::MethodOverride::call-37734212
 calls=1 15
-15 16
+15 31
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb
 cfn=ActionController::ParamsParser::parse_formatted_parameters-37734212
 calls=1 11
@@ -1522,7 +1482,7 @@ calls=1 527
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb
 cfn=ActionController::Base::send_response-37734212
 calls=1 525
-525 0
+525 15
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb
 cfn=ActionController::Base::log_processing-37734212
 calls=1 522
@@ -1586,7 +1546,7 @@ fn=Kernel::__send__-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
 cfn=ActionController::Integration::Session::get-37734212
 calls=1 498
-498 32
+498 31
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb
 cfn=ActionView::Template::EagerPath::load!-37734212
 calls=1 11
@@ -1618,7 +1578,11 @@ fn=Fixnum::<=-37738404
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=String::sub-37738404
-0 0
+0 16
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::initialize-37738404
+8 0
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::__send__-37738404
@@ -1626,7 +1590,7 @@ fn=Kernel::__send__-37738404
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/performance/browsing_test.rb
 cfn=BrowsingTest::test_homepage-37734212
 calls=1 57
-57 32
+57 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=String::<=>-37738404
@@ -1988,6 +1952,30 @@ fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Array::reverse-37738404
 0 0
 
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/routing_error.erb
+fn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47routing_error46erb-37738404
+0 0
+cfl=C:/Ruby/lib/ruby/1.8/erb.rb
+cfn=ERB::Util::h-37734212
+calls=1 2
+2 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Array::empty?-37734212
+calls=1 3
+3 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Exception::message-37734212
+calls=1 2
+2 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::concat-37734212
+calls=5 10
+10 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::to_s-37734212
+calls=1 2
+2 0
+
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Class::new-37738404
 0 0
@@ -2082,7 +2070,7 @@ fn=ActionController::Dispatcher::call-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb
 cfn=Rack::Lock::call-37734212
 calls=1 106
-106 16
+106 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/rescuable.rb
 fn=ActiveSupport::Rescuable::rescue_with_handler-37738404
@@ -2360,13 +2348,13 @@ cfn=Hash::[]-37734212
 calls=7 217
 217 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_input-37734212
-calls=1 195
-195 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
 cfn=Rack::Lint::Assertion::assert-37734212
 calls=9 228
 228 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_input-37734212
+calls=1 195
+195 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::inspect-37734212
 calls=1 190
@@ -2387,34 +2375,6 @@ fn=Hash::default-37738404
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Exception::initialize-37738404
 0 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::InputWrapper::read-37738404
-277 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Array::[]-37734212
-calls=1 300
-300 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Array::size-37734212
-calls=2 289
-289 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=NilClass::nil?-37734212
-calls=1 300
-300 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::Assertion::assert-37734212
-calls=3 301
-301 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=StringIO::read-37734212
-calls=1 295
-295 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Fixnum::>=-37734212
-calls=2 289
-289 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/module/attribute_accessors.rb
 fn=ActionController::Integration::ControllerCapture::ClassMethods::last_instantiation=-37738404
@@ -2450,7 +2410,7 @@ fn=Rack::Head::call-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb
 cfn=ActiveRecord::ConnectionAdapters::ConnectionManagement::call-37734212
 calls=1 9
-9 16
+9 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::[]-37734212
 calls=1 11
@@ -2459,6 +2419,58 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::==-37734212
 calls=1 11
 11 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/deprecation.rb
+fn=<Module::ActiveSupport::Deprecation>::silence-37738404
+42 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Exception::message-37734212
+calls=1 84
+84 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Kernel::class-37734212
+calls=1 84
+84 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Module::===-37734212
+calls=1 81
+81 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/buffered_logger.rb
+cfn=ActiveSupport::BufferedLogger::fatal-37734212
+calls=1 84
+84 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::+-37734212
+calls=2 84
+84 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Array::join-37734212
+calls=1 84
+84 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/class/attribute_accessors.rb
+cfn=ActionController::Base::logger-37734212
+calls=1 84
+84 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb
+cfn=ActionController::Rescue::clean_backtrace-37734212
+calls=1 84
+84 16
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Module::to_s-37734212
+calls=1 84
+84 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::each-37738404
+487 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Kernel::respond_to?-37734212
+calls=1 512
+512 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/response.rb
+cfn=ActionController::Response::each-37734212
+calls=1 490
+490 0
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Fixnum::to_s-37738404
@@ -2526,7 +2538,7 @@ fn=ActionController::Dispatcher::_call-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb
 cfn=ActionController::Dispatcher::dispatch-37734212
 calls=1 111
-111 16
+111 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/utils.rb
 fn=Rack::Utils::HeaderHash::include?-37738404
@@ -2942,7 +2954,7 @@ calls=2 64
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb
 cfn=ActionController::Filters::InstanceMethods::process-37734212
 calls=1 65
-65 16
+65 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::[]=-37734212
 calls=2 64
@@ -3036,25 +3048,13 @@ cfn=String::inspect-37734212
 calls=1 66
 66 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::call-37738404
-34 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Kernel::dup-37734212
-calls=1 35
-35 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::_call-37734212
-calls=1 35
-35 16
-
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb
 fn=ActiveRecord::QueryCache::call-37738404
 27 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb
 cfn=ActiveRecord::QueryCache::ClassMethods::cache-37734212
 calls=1 28
-28 16
+28 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::inspect-37738404
@@ -3075,6 +3075,66 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Fixnum::to_s-37734212
 calls=2 63
 63 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::Assertion::assert-37738404
+16 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=1 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=9 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=12 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=14 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=4 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=3 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=3 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=1 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=1 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=24 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=3 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=1 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=1 17
+17 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Proc::call-37734212
+calls=32 17
+17 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_type.rb
 fn=Mime::Type::=~-37738404
@@ -3138,7 +3198,7 @@ calls=1 24
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb
 cfn=ActionController::ParamsParser::call-37734212
 calls=1 25
-25 16
+25 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::[]=-37734212
 calls=1 24
@@ -3239,14 +3299,14 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Module::to_s-37734212
 calls=8 415
 415 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::downcase-37734212
-calls=2 433
-433 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
 cfn=Rack::Lint::Assertion::assert-37734212
 calls=1 434
 434 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::downcase-37734212
+calls=2 433
+433 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::==-37734212
 calls=2 433
@@ -3259,14 +3319,14 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Kernel::respond_to?-37734212
 calls=1 458
 458 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::downcase-37734212
-calls=3 448
-448 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
 cfn=Rack::Lint::Assertion::assert-37734212
 calls=1 451
 451 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::downcase-37734212
+calls=3 448
+448 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::==-37734212
 calls=3 448
@@ -3400,10 +3460,6 @@ fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::instance_variable_set-37738404
 0 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::ErrorWrapper::initialize-37738404
-356 0
-
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=String::include?-37738404
 0 0
@@ -3455,50 +3511,6 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::delete-37734212
 calls=1 124
 124 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::_call-37738404
-38 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_env-37734212
-calls=1 41
-41 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_headers-37734212
-calls=1 51
-51 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb
-cfn=ActionController::Dispatcher::call-37734212
-calls=1 47
-47 16
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Class::new-37734212
-calls=2 44
-44 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Hash::[]-37734212
-calls=2 44
-44 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::Assertion::assert-37734212
-calls=1 40
-40 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_content_length-37734212
-calls=1 54
-54 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_content_type-37734212
-calls=1 53
-53 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::check_status-37734212
-calls=1 49
-49 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Hash::[]=-37734212
-calls=2 44
-44 0
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Regexp::initialize-37738404
@@ -3562,7 +3574,7 @@ calls=1 154
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::each_line-37734212
 calls=1 155
-155 16
+155 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
 fn=ActionController::Integration::Session::requestify-37738404
@@ -3660,6 +3672,14 @@ fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ex
 fn=ActionController::Base::protected_instance_variables-37738404
 21 0
 
+fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/performance/browsing_test.rb
+fn=BrowsingTest::test_homepage-37738404
+6 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
+cfn=ActionController::Integration::Runner::get-37734212
+calls=1 7
+7 31
+
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/paths.rb
 fn=ActionView::PathSet::load!-37738404
 39 0
@@ -3671,14 +3691,6 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_e
 cfn=Symbol::to_proc-37734212
 calls=1 40
 40 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/testing/performance.rb
-fn=ActiveSupport::Testing::Performance::Profiler::run-37738404
-177 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Kernel::__send__-37734212
-calls=1 57
-57 32
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::instance_of?-37738404
@@ -3755,6 +3767,18 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/utils.rb
 cfn=Rack::Utils::HeaderHash::to_hash-37734212
 calls=1 110
 110 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/layout.erb
+fn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47layout46erb-37738404
+0 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::concat-37734212
+calls=30 29
+29 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=String::to_s-37734212
+calls=1 26
+26 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/backtrace_cleaner.rb
 fn=ActiveSupport::BacktraceCleaner::filter-37738404
@@ -3950,7 +3974,7 @@ fn=ActionController::Filters::InstanceMethods::process-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb
 cfn=ActionController::Base::process_without_filters-37734212
 calls=1 606
-606 16
+606 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=String::each_line-37738404
@@ -3962,7 +3986,7 @@ calls=32 339
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
 cfn=Rack::Lint::Assertion::assert-37734212
 calls=32 492
-492 16
+492 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::inspect-37734212
 calls=32 492
@@ -4150,7 +4174,7 @@ calls=1 120
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 fn=ActionController::Base::response-37738404
-1 0
+1 15
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/hash/indifferent_access.rb
 fn=HashWithIndifferentAccess::convert_key-37738404
@@ -4194,7 +4218,7 @@ calls=1 365
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb
 cfn=ActiveRecord::QueryCache::call-37734212
 calls=1 361
-361 16
+361 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::===-37738404
@@ -4246,7 +4270,7 @@ calls=1 13
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb
 cfn=Rack::Head::call-37734212
 calls=1 24
-24 16
+24 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::==-37734212
 calls=1 13
@@ -4399,26 +4423,6 @@ fn=Mime::Type::to_s-37738404
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Module::name-37738404
 0 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::check_headers-37738404
-393 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Kernel::class-37734212
-calls=1 395
-395 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Hash::each-37734212
-calls=1 398
-398 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::Assertion::assert-37734212
-calls=1 395
-395 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Module::to_s-37734212
-calls=1 395
-395 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb
 fn=ActionView::Template::EagerPath::load!-37738404
@@ -4678,7 +4682,7 @@ fn=ActionController::Failsafe::call-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb
 cfn=ActionController::Session::CookieStore::call-37734212
 calls=1 11
-11 16
+11 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 fn=<Class::ActionController::Base>::master_helper_module-37738404
@@ -4820,10 +4824,6 @@ fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Array::empty?-37738404
 0 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::InputWrapper::initialize-37738404
-249 0
-
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Array::[]-37738404
 0 0
@@ -4863,38 +4863,6 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_e
 cfn=ActiveSupport::CoreExtensions::Hash::IndifferentAccess::with_indifferent_access-37734212
 calls=1 480
 480 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/routing_error.erb
-fn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47routing_error46erb-37738404
-0 0
-cfl=C:/Ruby/lib/ruby/1.8/erb.rb
-cfn=ERB::Util::h-37734212
-calls=1 2
-2 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Array::empty?-37734212
-calls=1 3
-3 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Exception::message-37734212
-calls=1 2
-2 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::concat-37734212
-calls=5 10
-10 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::to_s-37734212
-calls=1 2
-2 0
-
-fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/performance/browsing_test.rb
-fn=BrowsingTest::test_homepage-37738404
-6 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
-cfn=ActionController::Integration::Runner::get-37734212
-calls=1 7
-7 32
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/class/attribute_accessors.rb
 fn=ActionController::Base::rescue_templates-37738404
@@ -5112,6 +5080,34 @@ cfn=Enumerable::find-37734212
 calls=6 59
 59 0
 
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::InputWrapper::read-37738404
+277 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Array::[]-37734212
+calls=1 300
+300 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Array::size-37734212
+calls=2 289
+289 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::Assertion::assert-37734212
+calls=3 301
+301 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=NilClass::nil?-37734212
+calls=1 300
+300 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=StringIO::read-37734212
+calls=1 295
+295 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Fixnum::>=-37734212
+calls=2 289
+289 0
+
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb
 fn=ActionView::Renderable::method_name-37738404
 45 0
@@ -5175,10 +5171,6 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=<Class::Thread>::current-37734212
 calls=1 227
 227 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::initialize-37738404
-8 0
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=FalseClass::to_s-37738404
@@ -5311,14 +5303,14 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb
 cfn=ActionView::Base::_set_controller_content_type-37734212
 calls=1 32
 32 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/layout.erb
-cfn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47layout46erb-37734212
-calls=1 34
-34 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb
 cfn=ActionView::Base::_evaluate_assigns_and_ivars-37734212
 calls=1 31
 31 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/templates/rescues/layout.erb
+cfn=ActionView::Base::CompiledTemplates::_run_erb_C5847Ruby47lib47ruby47gems47146847gems47actionpack45246346247lib47action_controller47templates47rescues47layout46erb-37734212
+calls=1 34
+34 0
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb
 cfn=ActionView::Base::_set_controller_content_type-37734212
 calls=1 32
@@ -5470,7 +5462,7 @@ calls=1 36
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Proc::call-37734212
 calls=1 29
-29 16
+29 31
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=String::[]-37738404
@@ -5515,6 +5507,18 @@ calls=1 239
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::class-37738404
 0 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::call-37738404
+34 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Kernel::dup-37734212
+calls=1 35
+35 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::_call-37734212
+calls=1 35
+35 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/abstract_store.rb
 fn=ActionController::Session::AbstractStore::SessionHash::initialize-37738404
@@ -5596,61 +5600,9 @@ cfn=ActiveSupport::Rescuable::rescue_with_handler-37734212
 calls=1 74
 74 0
 
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/deprecation.rb
-fn=<Module::ActiveSupport::Deprecation>::silence-37738404
-42 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Exception::message-37734212
-calls=1 84
-84 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Kernel::class-37734212
-calls=1 84
-84 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Module::===-37734212
-calls=1 81
-81 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/buffered_logger.rb
-cfn=ActiveSupport::BufferedLogger::fatal-37734212
-calls=1 84
-84 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=String::+-37734212
-calls=2 84
-84 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Array::join-37734212
-calls=1 84
-84 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/class/attribute_accessors.rb
-cfn=ActionController::Base::logger-37734212
-calls=1 84
-84 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb
-cfn=ActionController::Rescue::clean_backtrace-37734212
-calls=1 84
-84 16
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Module::to_s-37734212
-calls=1 84
-84 0
-
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Kernel::nil?-37738404
 0 0
-
-fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-fn=Rack::Lint::each-37738404
-487 0
-cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
-cfn=Kernel::respond_to?-37734212
-calls=1 512
-512 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/response.rb
-cfn=ActionController::Response::each-37734212
-calls=1 490
-490 16
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/object/misc.rb
 fn=Object::returning-37738404
@@ -5659,6 +5611,10 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integr
 cfn=ActionController::Integration::Runner::copy_session_variables!-37734212
 calls=1 499
 499 0
+
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::ErrorWrapper::initialize-37738404
+356 0
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb
 fn=ActionController::Base::log_processing_for_parameters-37738404
@@ -5708,6 +5664,50 @@ cfn=NilClass::to_a-37734212
 calls=1 229
 229 0
 
+fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+fn=Rack::Lint::_call-37738404
+38 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_headers-37734212
+calls=1 51
+51 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_env-37734212
+calls=1 41
+41 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb
+cfn=ActionController::Dispatcher::call-37734212
+calls=1 47
+47 31
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Class::new-37734212
+calls=2 44
+44 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Hash::[]-37734212
+calls=2 44
+44 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::Assertion::assert-37734212
+calls=1 40
+40 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_content_length-37734212
+calls=1 54
+54 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_content_type-37734212
+calls=1 53
+53 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::check_status-37734212
+calls=1 49
+49 0
+cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
+cfn=Hash::[]=-37734212
+calls=2 44
+44 0
+
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb
 fn=Rack::Lock::call-37738404
 9 0
@@ -5718,7 +5718,7 @@ calls=1 10
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Mutex::synchronize-37734212
 calls=1 11
-11 16
+11 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Hash::[]=-37734212
 calls=2 13
@@ -5758,7 +5758,7 @@ fn=ActionController::Integration::Session::get-37738404
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
 cfn=ActionController::Integration::Session::process-37734212
 calls=1 196
-196 32
+196 31
 
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/request.rb
 fn=Rack::Request::content_length-37738404
@@ -5794,7 +5794,7 @@ calls=2 302
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=String::sub-37734212
 calls=336 38
-38 0
+38 16
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Enumerable::any?-37734212
 calls=105 25
@@ -5822,7 +5822,7 @@ calls=1 71
 
 fl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 fn=Proc::call-37738404
-0 16
+0 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Array::include?-37734212
 calls=1 191
@@ -5866,7 +5866,7 @@ calls=1 82
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb
 cfn=ActionController::Dispatcher::_call-37734212
 calls=1 82
-82 16
+82 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Integer::to_i-37734212
 calls=1 389
@@ -6087,10 +6087,6 @@ fn=String::=~-37738404
 fl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
 fn=ActionController::Integration::Session::process-37738404
 257 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::call-37734212
-calls=1 320
-320 16
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Symbol::to_s-37734212
 calls=1 273
@@ -6103,6 +6099,10 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 cfn=ActionController::Base::response-37734212
 calls=1 344
 344 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::each-37734212
+calls=1 339
+339 0
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=Array::each-37734212
 calls=2 330
@@ -6115,10 +6115,6 @@ cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/(eval)
 cfn=ActionController::Base::request-37734212
 calls=1 343
 343 0
-cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
-cfn=Rack::Lint::each-37734212
-calls=1 339
-339 16
 cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integration.rb
 cfn=ActionController::Integration::ControllerCapture::ClassMethods::clear_last_instantiation!-37734212
 calls=1 312
@@ -6203,6 +6199,10 @@ cfl=C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/integr
 cfn=ActionController::Integration::Session::requestify-37734212
 calls=1 258
 258 0
+cfl=C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lint.rb
+cfn=Rack::Lint::call-37734212
+calls=1 320
+320 31
 cfl=C:/Documents and Settings/daveg/RubymineProjects/csw/test/ruby_runtime
 cfn=StringIO::length-37734212
 calls=1 286

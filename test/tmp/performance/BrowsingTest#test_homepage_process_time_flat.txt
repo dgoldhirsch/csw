@@ -1,8 +1,8 @@
 Thread ID: 21128100
-Total: 0.032000
+Total: 0.031000
 
  %self     total     self     wait    child    calls  name
- 50.00      0.03     0.02     0.00     0.02      107  Proc#call
- 50.00      0.02     0.02     0.00     0.00        6  Array#map
+ 51.61      0.02     0.02     0.00     0.00      336  String#sub
+ 48.39      0.01     0.01     0.00     0.00       12  ActionController::Base#response
 
 

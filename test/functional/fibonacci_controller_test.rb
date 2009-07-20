@@ -6,12 +6,18 @@ class FibonacciControllerTest < ActionController::TestCase
       get :new
     end
     should_render_template :new
+    should "new form" do
+      assert_response :success
+      verify_form_for "", :selected => 'matrix', :other => 'addition'
+    end
   end
 
   context "compute matrix" do
     setup do
       get :compute, :n => 6, :algorithm => "matrix"
     end
+
+    # Instance variables in controller
     should_assign_to :matrix_checked
     should_not_assign_to :addition_checked
     should "assignments" do
@@ -19,13 +25,22 @@ class FibonacciControllerTest < ActionController::TestCase
       assert_equal :matrix, assigns(:algorithm_name)
       assert_equal 8, assigns(:result)
     end
+
+    # Response
     should_render_template :compute
+    should "respond using matrix" do
+      assert_response :success
+      verify_form_for "6", :selected => 'matrix', :other => 'addition'
+      verify_result "8"
+    end
   end
 
   context "compute addition" do
     setup do
       get :compute, :n => 6, :algorithm => "addition"
     end
+
+    #Instance variables in controller
     should_not_assign_to :matrix_checked
     should_assign_to :addition_checked
     should "assignments" do
@@ -33,29 +48,64 @@ class FibonacciControllerTest < ActionController::TestCase
       assert_equal :addition, assigns(:algorithm_name)
       assert_equal 8, assigns(:result)
     end
-    should_render_template :compute
-  end
 
-  #context "Must be POST" do
-  #  setup do
-  #    get :compute, :n => 6, :algorithm => "matrix"
-  #  end
-  #
-  #  should "fail because of method" do
-  #    # TODO: ensure response is error of GET rather than POST
-  #  end
-  #end
+    # Response
+    should_render_template :compute
+    should "respond using addition" do
+      assert_response :success
+      verify_form_for 6, :selected => 'addition', :other => 'matrix'
+      verify_result "8"
+    end
+  end
 
   context "bad parameters" do
     setup do
       get :compute, :n => "asdf", :algorithm => "fubar"
     end
-
     should "get errors" do
-      # TODO: ensure response contains two error messages, one for n, the other for algorithm
+      verify_result "Unknown algorithm " + "fubar" + " ignored"
     end
   end
-end  
+
+  # Private.
+  # Verify response contains a form with an input for n and
+  # an input for the algorithm to be used
+  def verify_form_for n, algorithm_options
+    assert_select "form" do
+      assert_select "input", 3
+      assert_select "input[name=n][value=#{n}]", 1  # one input for n = ""
+      verify_algorithm_input algorithm_options
+    end
+  end
+
+  # Private.
+  # Verify response contains an algorithm input with
+  # one option selected
+  def verify_algorithm_input options
+    assert_select "input[name=algorithm]", 2 do | tags |
+      selected_tag = tags.detect {|t| t.attributes['value'] == options[:selected]}
+      assert selected_tag
+      selected_tag.attributes['checked']
+      other_tag = tags.detect {|t| t.attributes['value'] == options[:other]}
+      assert other_tag
+      assert !(other_tag.attributes['checked'])
+    end
+  end
+
+  def verify_result text
+    assert_select "div[id=result]", 1, :text => text
+  end
+end
+
+#context "Must be POST" do
+#  setup do
+#    get :compute, :n => 6, :algorithm => "matrix"
+#  end
+#
+#  should "fail because of method" do
+#    # TODO: ensure response is error of GET rather than POST
+#  end
+#end
 
 #context "GET to show" do
 #  setup do
