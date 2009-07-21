@@ -20,7 +20,7 @@ class FibonacciController < ApplicationController
 
     if !(@errors.empty?)
       @result = @errors.to_s
-    elsif
+    else
       @result = CS::fibonacci(@n.to_i, @algorithm_name)
     end
 
