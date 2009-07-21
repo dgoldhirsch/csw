@@ -1,6 +1,4 @@
 class CswController < ApplicationController
-  def index
-    respond_to { |f| f.html }
-  end
-
+  #def index
+  #end
 end

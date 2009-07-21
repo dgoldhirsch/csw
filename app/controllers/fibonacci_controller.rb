@@ -1,43 +1,48 @@
 require 'cs'
 
 class FibonacciController < ApplicationController
-  # GET /fibonacci/new
+  #GET /fibonacci/new
+  #
+  # Return a form to invoke CS::fibonacci whose action is :compute
+  #
   # Optional parameters:
-  #   n an integer (negative values are interpreted as 0)
-  #   algorithm one of these strings ('CS::MATRIX', 'CS::ADDITION'), whose default is 'CS::MATRIX'
+  #  n an integer (negative values are interpreted as 0)
+  #  algorithm one of these strings ('CS::MATRIX', 'CS::ADDITION'), whose default is 'CS::MATRIX'
   def new
-    respond_to do |f|
-      f.html
-    end
+    #respond_to do |f|
+    #  f.html
+    #end
   end
 
-  # GET /fibonacci/:n?algorithm={MATRIX, ADDITION}
-  # TODO: Change to POST, because (dimly, theoretically) the computation could have a side-effect within the server.
+  #POST /fibonacci/n?algorithm={MATRIX, ADDITION}
+  #
+  # Call CS::fibonacci with the given n and algorithm.
+  # Return another compute form with those values, as well as the result.
+  # The result will be a simple integer, or will be a string in case of
+  # error.
+  #
+  # ASSUMPTION:  Rails is configured to prevent a GET;  this method
+  # will not check, and will probably work correctly with a GET (which is
+  # undesirable)
   def compute
     @errors = []
     @n = params[:n]
-    self.validate
-
+    self.validate_algorithm
     if !(@errors.empty?)
       @result = @errors.to_s
     else
       @result = CS::fibonacci(@n.to_i, @algorithm_name)
     end
 
-    respond_to do |f|
-      f.html
-    end
+    #respond_to do |f|
+    #  f.html
+    #end
   end
 
-  def validate
-    #self.validate_post_method  # TODO: Ensure it's truly a POST
-    self.validate_algorithm
-  end
-
-  def validate_post_method
-    @errors << "fibonacci/compute method " + request.method.to_s + " should be POST" if !(request.post?)
-  end
-
+  protected
+  
+  #Ensure that algorithm parameter has a value we understand.
+  #If so, set instance variables used by view.  If not, set an error.
   def validate_algorithm
     if params[:algorithm] == "addition"
       @algorithm_name = :addition

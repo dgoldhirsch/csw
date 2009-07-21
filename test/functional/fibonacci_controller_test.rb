@@ -14,7 +14,7 @@ class FibonacciControllerTest < ActionController::TestCase
 
   context "compute matrix" do
     setup do
-      get :compute, :n => 6, :algorithm => "matrix"
+      post :compute, :n => 6, :algorithm => "matrix"
     end
 
     # Instance variables in controller
@@ -37,7 +37,7 @@ class FibonacciControllerTest < ActionController::TestCase
 
   context "compute addition" do
     setup do
-      get :compute, :n => 6, :algorithm => "addition"
+      post :compute, :n => 6, :algorithm => "addition"
     end
 
     #Instance variables in controller
@@ -59,21 +59,22 @@ class FibonacciControllerTest < ActionController::TestCase
   end
 
   context "bad parameters" do
-    setup do
-      get :compute, :n => "asdf", :algorithm => "fubar"
-    end
     should "get errors" do
+      post :compute, :n => "asdf", :algorithm => "fubar"
       verify_result "Unknown algorithm " + "fubar" + " ignored"
     end
   end
 
+  protected
+  
   # Private.
   # Verify response contains a form with an input for n and
   # an input for the algorithm to be used
   def verify_form_for n, algorithm_options
-    assert_select "form" do
-      assert_select "input", 3
+    assert_select "form[method=post]" do
+      assert_select "input", 4 # includes hidden <input id='authenticity_token'>
       assert_select "input[name=n][value=#{n}]", 1  # one input for n = ""
+      assert_select "input[id=authenticity_token]", 1
       verify_algorithm_input algorithm_options
     end
   end
@@ -97,15 +98,6 @@ class FibonacciControllerTest < ActionController::TestCase
   end
 end
 
-#context "Must be POST" do
-#  setup do
-#    get :compute, :n => 6, :algorithm => "matrix"
-#  end
-#
-#  should "fail because of method" do
-#    # TODO: ensure response is error of GET rather than POST
-#  end
-#end
 
 #context "GET to show" do
 #  setup do

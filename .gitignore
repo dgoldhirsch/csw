@@ -5,4 +5,5 @@ coverage.*
 rdoc
 .idea/
 *.log
+tmp/
 
