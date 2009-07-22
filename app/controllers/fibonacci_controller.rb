@@ -9,6 +9,7 @@ class FibonacciController < ApplicationController
   #  n an integer (negative values are interpreted as 0)
   #  algorithm one of these strings ('CS::MATRIX', 'CS::ADDITION'), whose default is 'CS::MATRIX'
   def new
+    @fibonacci = Fibonacci.new
     #respond_to do |f|
     #  f.html
     #end
@@ -25,6 +26,10 @@ class FibonacciController < ApplicationController
   # will not check, and will probably work correctly with a GET (which is
   # undesirable)
   def compute
+    #@fibonacci = Fibonacci.new(params[:fibonacci])
+    #@result = @fibonacci.result
+
+
     @errors = []
     @n = params[:n]
     self.validate_algorithm

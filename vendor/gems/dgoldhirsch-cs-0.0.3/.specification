@@ -1,0 +1,67 @@
+--- !ruby/object:Gem::Specification 
+name: dgoldhirsch-cs
+version: !ruby/object:Gem::Version 
+  version: 0.0.3
+platform: ruby
+authors: 
+- dgoldhirsch
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-07-09 00:00:00 -04:00
+default_executable: 
+dependencies: []
+
+description: 
+email: dgoldhirsch@yahoo.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README.rdoc
+files: 
+- lib/cs.rb
+- lib/cs_fibonacci.rb
+- lib/cs_matrix.rb
+- LICENSE
+- README.rdoc
+- test/cs_benchmark_test.rb
+- test/cs_mixin_test.rb
+- test/cs_test.rb
+- test/test_helper.rb
+has_rdoc: true
+homepage: http://github.com/dgoldhirsch/cs
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.4
+signing_key: 
+specification_version: 2
+summary: Computer Science Library for Ruby
+test_files: 
+- test/cs_benchmark_test.rb
+- test/cs_mixin_test.rb
+- test/cs_test.rb
+- test/test_helper.rb

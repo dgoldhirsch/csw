@@ -1,0 +1,69 @@
+= cs
+
+Computer Science Module for Ruby
+
+This is an ambitious gem in which we hope to provide useful computer science algorithms.
+The first version is very small, offering two algorithms to compute Fibonacci numbers.
+We did this as an exercise in writing good Ruby code, as well as learning how to provide
+real, useful libraries as gems.
+
+Here are the two Fibonacci algorithms currently supported:
+
+[Matrix exponentiation]  This is the fastest way we have found to compute Fibonacci numbers.
+It makes use of the fact that if M = Matrix[[0, 1], [1, 1]], then the lower right element of
+M**k contains the (k + 1)'th Fibonacci number.  This is very fast if the Matrix.** operation
+is optimized to use successive squaring rather than individual multiplications.  Ruby's
+implementation of Matrix.** does exactly this, fortunately.
+
+[Simple addition]  This is a simple loop that computes F(n) by adding F(0) + F(1) + ... + F(n - 1).
+For n < 5000, this seems to perform about as well as the matrix exponentiation.  But, thereafter
+it is MUCH slower (at least, in the benchmarks we performed).
+
+= Using the library
+
+The algorithms are available in two forms.  The basic form is a module method:
+
+  require 'rubygems'
+  require 'cs'
+  y = CS::fibonacci(6) # returns F(6) which is 8 = 5 + 3, using matrix algorithm by default
+
+An optional parameter selects the algorithm to be used.  By default, the matrix
+exponentiation algorithm is used.  However, you can choose one or the other as follows:
+
+  y_more_slowly = CS::fibonacci(6, CS::ADDITION)
+
+As a convenience, the method is also available as an instance mixin for the class Integer:
+
+  require 'rubygems'
+  require 'cs_fibonacci'
+  y = 6.fibonacci # use default algorithm
+  y_slower = 6.fibonacci(CS::FIBONACCI_WHILE_LOOP)
+
+== Obtaining the gem from github
+
+  gem sources -a http://gems.github.com
+  gem install dgoldhirsch-cs
+
+== Extensions to Standard Library
+
+While coding these algorithms, we found it useful to code an extension to the
+standard Ruby Matrix class, to obtain the lower right element of a matrix.
+It may be that this is already available in one of the existing Ruby extension
+gems--but, for now, we included it in the CS module on the chance that
+someone else might want to make use of it:
+
+  require 'rubygems'
+  require 'cs'
+  y = CS::lower_right(Matrix[[1, 2], [3, 4]]) # y is 4
+
+== This is Still Half-Baked
+
+Obviously, this is a beginner's gem which is in an infant state.  Comments and
+suggestions are very welcome.  As a companion to the gem, we'll try to create
+a Web site that demonstrates the algorithms and which solicits additional algorithm
+contributions and suggestions.   We'll update this document when/if we are able
+to finish that.
+
+== Copyright
+
+Copyright (c) 2009 David C. Goldhirsch. See LICENSE for details.

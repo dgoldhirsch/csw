@@ -10,6 +10,12 @@ class FibonacciControllerTest < ActionController::TestCase
       assert_response :success
       verify_form_for "", :selected => 'matrix', :other => 'addition'
     end
+
+    should_assign_to :fibonacci
+
+    should "assign a new fibonacci to @fibonacci" do
+      assert_respond_to assigns(:fibonacci), :result
+    end
   end
 
   context "compute matrix" do

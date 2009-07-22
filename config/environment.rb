@@ -42,4 +42,6 @@ Rails::Initializer.run do |config|
   # Shoulda!
   config.gem 'thoughtbot-shoulda', :lib => 'shoulda/rails', :source => "http://gems.github.com"
 
+  config.gem 'dgoldhirsch-cs', :lib => 'cs', :source => 'http://gems.github.com'
+  config.gem 'jferris-mocha', :lib => 'mocha', :source => 'http://gem.github.com'
 end
