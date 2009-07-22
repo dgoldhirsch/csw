@@ -11,7 +11,7 @@ class FibonacciControllerTest < ActionController::TestCase
 
     should "new form" do
       assert_response :success
-      verify_form_for "", :selected => 'matrix', :other => 'addition'
+      verify_new_view
     end
 
     should "assign a new fibonacci to @fibonacci" do
@@ -35,7 +35,7 @@ class FibonacciControllerTest < ActionController::TestCase
 
     should "respond using matrix" do
       assert_response :success
-      verify_form_for "6", :selected => 'matrix', :other => 'addition'
+      verify_matrix_compute_view_for "6"
       verify_result "8"
     end
   end
@@ -56,7 +56,7 @@ class FibonacciControllerTest < ActionController::TestCase
 
     should "respond using addition" do
       assert_response :success
-      verify_form_for "6", :selected => 'addition', :other => 'matrix'
+      verify_addition_compute_view_for "6"
       verify_result "8"
     end
   end
@@ -70,30 +70,45 @@ class FibonacciControllerTest < ActionController::TestCase
 
   protected
   
-  # Private.
-  # Verify response contains a form with an input for n and
-  # an input for the algorithm to be used
-  def verify_form_for n, algorithm_options
-    assert_select "form[method=post]" do
-      assert_select "input", 4 # includes hidden <input id='authenticity_token'>
-      assert_select "input[name=n][value=#{n}]", 1  # one input for n = ""
-      assert_select "input[id=authenticity_token]", 1
-      verify_algorithm_input algorithm_options
+  def verify_addition_compute_view_for n
+    assert_select "form[method=post]" do | fs |
+      self.verify_compute_view_for n
+      self.verify_addition_algorithm_input
     end
   end
 
-  # Private.
-  # Verify response contains an algorithm input with
-  # one option selected
-  def verify_algorithm_input options
-    assert_select "input[name=algorithm]", 2 do | tags |
-      selected_tag = tags.detect {|t| t.attributes['value'] == options[:selected]}
-      assert selected_tag
-      selected_tag.attributes['checked']
-      other_tag = tags.detect {|t| t.attributes['value'] == options[:other]}
-      assert other_tag
-      assert !(other_tag.attributes['checked'])
+  def verify_matrix_compute_view_for n
+    assert_select "form[method=post]" do | fs |
+      self.verify_compute_view_for n
+      self.verify_matrix_algorithm_input
     end
+  end
+
+  def verify_new_view
+    assert_select "form[method=post]" do |fs|
+      assert_select "input", 5 # includes hidden <input id='authenticity_token'>
+      assert_select "input[id=fibonacci_n]", 1  # one input for n...
+      assert_select "input[id=fibonacci_n][value]", 0  # having no preset value
+      assert_select "input[id=authenticity_token]", 1
+    end
+  end
+  
+  def verify_compute_view_for n
+      assert_select "input", 5 # includes hidden <input id='authenticity_token'>
+      assert_select "input[id=fibonacci_n][value=#{n}]", 1  # one input for n = ""
+      assert_select "input[id=authenticity_token]", 1
+  end
+  
+  def verify_addition_algorithm_input
+    assert_select "input[id=fibonacci_algorithm_addition][checked=checked]", 1
+    assert_select "input[id=fibonacci_algorithm_matrix][checked=checked]", 0
+    assert_select "input[id=fibonacci_algorithm_matrix]", 1
+  end
+
+  def verify_matrix_algorithm_input
+    assert_select "input[id=fibonacci_algorithm_matrix][checked=checked]", 1
+    assert_select "input[id=fibonacci_algorithm_addition][checked=checked]", 0
+    assert_select "input[id=fibonacci_algorithm_addition]", 1
   end
 
   def verify_result text

@@ -1,8 +1,9 @@
 <% form_for fibonacci, :url => compute_fibonacci_path do |form| %>
+<%= hidden_field_tag 'authenticity_token', form_authenticity_token -%>
   Fibonacci(n) for n = <%= form.text_field :n %><br>
 &nbsp;&nbsp;&nbsp;Algorithm to use:<br><br>
-&nbsp;&nbsp;&nbsp;<%= form.radio_button :algorithm, 'matrix', :checked => true %>Matrix<br>
-&nbsp;&nbsp;&nbsp;<%= form.radio_button :algorithm, 'addition' %>Addition<br>
+&nbsp;&nbsp;&nbsp;<%= form.radio_button 'algorithm', 'matrix' %>Matrix<br>
+&nbsp;&nbsp;&nbsp;<%= form.radio_button 'algorithm', 'addition'%>Addition<br>
 <br>
 <%= form.submit 'Submit Again', :style => 'height: 25px; width: 150px' %>
 <% end %>
