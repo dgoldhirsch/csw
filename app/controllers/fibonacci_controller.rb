@@ -26,17 +26,14 @@ class FibonacciController < ApplicationController
   # will not check, and will probably work correctly with a GET (which is
   # undesirable)
   def compute
-    #@fibonacci = Fibonacci.new(params[:fibonacci])
-    #@result = @fibonacci.result
-
-
+    @fibonacci = Fibonacci.new(params[:fibonacci])
     @errors = []
-    @n = params[:n]
+    @n = params[:fibonacci][:n]
     self.validate_algorithm
     if !(@errors.empty?)
       @result = @errors.to_s
     else
-      @result = CS::fibonacci(@n.to_i, @algorithm_name)
+      @result = @fibonacci.result
     end
 
     #respond_to do |f|
@@ -49,14 +46,14 @@ class FibonacciController < ApplicationController
   #Ensure that algorithm parameter has a value we understand.
   #If so, set instance variables used by view.  If not, set an error.
   def validate_algorithm
-    if params[:algorithm] == "addition"
+    if params[:fibonacci][:algorithm] == "addition"
       @algorithm_name = :addition
       @addition_checked = "CHECKED"
     else # assume matrix radio button, but return error if something else
       @algorithm_name = :matrix
       @matrix_checked = "CHECKED"
-      if params[:algorithm] != "matrix"
-        @errors << "Unknown algorithm " + params[:algorithm] + " ignored"
+      if params[:fibonacci][:algorithm] != "matrix"
+        @errors << "Unknown algorithm #{params[:fibonacci][:algorithm]} ignored"
       end
     end
   end

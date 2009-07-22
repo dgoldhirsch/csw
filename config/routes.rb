@@ -34,7 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
 
   map.connect 'fibonacci/new', :controller => 'fibonacci', :action => 'new', :conditions => { :method => :get }
-  map.connect 'fibonacci/compute', :controller => 'fibonacci', :action => 'compute', :conditions => { :method => :post }
+  map.compute_fibonacci 'fibonacci/compute', :controller => 'fibonacci', :action => 'compute', :conditions => { :method => :post }
   map.connect 'csw', :controller => 'csw', :action => 'index'
   
   # See how all your routes lay out with "rake routes"

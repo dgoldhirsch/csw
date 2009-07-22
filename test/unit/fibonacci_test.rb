@@ -43,37 +43,37 @@ class FibonacciTest < ActiveRecord::TestCase
   end
 
   should "call CS::fibonacci and get result" do
-    n = 5
+    n = '5'
     algorithm = 'matrix'
 
     CS.stubs(:fibonacci).returns(5)
     Fibonacci.new(:n => n, :algorithm => algorithm).result
 
     assert_received(CS, :fibonacci) do |expects|
-      expects.with(n, algorithm.to_sym)
+      expects.with(n.to_i, algorithm.to_sym)
     end
   end
 
   should "nil algorithm" do
-    n = 6
+    n = '6'
 
     CS.stubs(:fibonacci).returns(8)
     Fibonacci.new(:n => n, :algorithm => nil).result
 
     assert_received(CS, :fibonacci) do |expects|
-      expects.with(n)
+      expects.with(n.to_i)
     end
   end
 
   should "blank algorithm" do
-    n = 6
+    n = '6'
 
     CS.stubs(:fibonacci).returns(8)
     Fibonacci.new(:n => n, :algorithm => '').result
 
     assert_received(CS, :fibonacci) do |expects|
 
-      expects.with(n)
+      expects.with(n.to_i)
     end
   end
 end

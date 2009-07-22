@@ -5,13 +5,14 @@ class FibonacciControllerTest < ActionController::TestCase
     setup do
       get :new
     end
+
     should_render_template :new
+    should_assign_to :fibonacci
+
     should "new form" do
       assert_response :success
       verify_form_for "", :selected => 'matrix', :other => 'addition'
     end
-
-    should_assign_to :fibonacci
 
     should "assign a new fibonacci to @fibonacci" do
       assert_respond_to assigns(:fibonacci), :result
@@ -20,20 +21,18 @@ class FibonacciControllerTest < ActionController::TestCase
 
   context "compute matrix" do
     setup do
-      post :compute, :n => 6, :algorithm => "matrix"
+      post :compute, :fibonacci => {:n => '6', :algorithm => "matrix"}
     end
 
-    # Instance variables in controller
-    should_assign_to :matrix_checked
-    should_not_assign_to :addition_checked
-    should "assignments" do
-      assert_equal "6", assigns(:n)
-      assert_equal :matrix, assigns(:algorithm_name)
-      assert_equal 8, assigns(:result)
+    should "assign to @fibonacci a new Fibonacci object with the values set" do
+      assert_not_nil assigns(:fibonacci)
+      assert_equal '6', assigns(:fibonacci).n
+      assert_equal 'matrix', assigns(:fibonacci).algorithm
     end
 
     # Response
     should_render_template :compute
+
     should "respond using matrix" do
       assert_response :success
       verify_form_for "6", :selected => 'matrix', :other => 'addition'
@@ -43,30 +42,28 @@ class FibonacciControllerTest < ActionController::TestCase
 
   context "compute addition" do
     setup do
-      post :compute, :n => 6, :algorithm => "addition"
+      post :compute, :fibonacci => {:n => '6', :algorithm => "addition"}
     end
 
-    #Instance variables in controller
-    should_not_assign_to :matrix_checked
-    should_assign_to :addition_checked
-    should "assignments" do
-      assert_equal "6", assigns(:n)
-      assert_equal :addition, assigns(:algorithm_name)
-      assert_equal 8, assigns(:result)
+    should "assign to @fibonacci a new Fibonacci object with the values set" do
+      assert_not_nil assigns(:fibonacci)
+      assert_equal '6', assigns(:fibonacci).n
+      assert_equal 'addition', assigns(:fibonacci).algorithm
     end
 
     # Response
     should_render_template :compute
+
     should "respond using addition" do
       assert_response :success
-      verify_form_for 6, :selected => 'addition', :other => 'matrix'
+      verify_form_for "6", :selected => 'addition', :other => 'matrix'
       verify_result "8"
     end
   end
 
   context "bad parameters" do
     should "get errors" do
-      post :compute, :n => "asdf", :algorithm => "fubar"
+      post :compute, :fibonacci => {:n => "asdf", :algorithm => "fubar"}
       verify_result "Unknown algorithm " + "fubar" + " ignored"
     end
   end

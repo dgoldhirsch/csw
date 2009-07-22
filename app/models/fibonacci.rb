@@ -22,9 +22,9 @@ class Fibonacci
     elsif n.to_i.zero?
       0
     elsif self.algorithm.blank?
-      CS::fibonacci(self.n)
+      CS::fibonacci(self.n.to_i)
     else
-      CS::fibonacci(self.n, self.algorithm.to_sym)
+      CS::fibonacci(self.n.to_i, self.algorithm.to_sym)
     end
   end
 end

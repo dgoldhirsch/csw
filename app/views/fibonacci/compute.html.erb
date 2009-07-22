@@ -7,15 +7,9 @@
 
 </head>
 <body>
-<form action="/fibonacci/compute" method="post"><br><br>
-<%= hidden_field_tag 'authenticity_token', form_authenticity_token -%>
-  Fibonacci(n) for n = <input name="n" value=<%= @n -%>><br>
-  &nbsp;&nbsp;&nbsp;Algorithm to use:<br><br>
-  &nbsp;&nbsp;&nbsp;<input name="algorithm" value="matrix" type="radio" <%= @matrix_checked -%>>Matrix<br>
-  &nbsp;&nbsp;&nbsp;<input name="algorithm" value="addition" type="radio" <%= @addition_checked -%>>Addition<br>
-  <br>
-  <button name="Submit Again" style="height: 25px; width: 150px;">Submit Again</button>
-</form>
+
+  <%= render :partial => 'fibonacci', :object => @fibonacci %>
+
 
 <p />
 <div id="result">
