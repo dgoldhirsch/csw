@@ -19,7 +19,7 @@ class FibonacciTest < ActiveRecord::TestCase
     end
   end
 
-  should "valid options for initialization" do
+  should "initialization options default to {}" do
     fib = Fibonacci.new
   end
 
@@ -31,15 +31,29 @@ class FibonacciTest < ActiveRecord::TestCase
     assert_nil Fibonacci.new.id
   end
 
+  should "default initialization" do
+    fib = Fibonacci.new
+    puts "default initialization: " + fib.to_s
+    assert fib.matrix?
+    assert_nil fib.n
+  end
+  
+  should "raise ActiveRecord::RecordNotFound if n is nil on #result" do
+    assert_raise(ActiveRecord::RecordNotFound) do
+      Fibonacci.new(:n => nil).result
+    end
+  end
+
   should "return 0 for non-numeric n" do
     assert_equal 0, Fibonacci.new(:n=> 'a').result
     assert_equal 0, Fibonacci.new(:n=> '  ').result
   end
 
-  should "raise ActiveRecord::RecordNotFound if n is nil on #result" do
-    assert_raise(ActiveRecord::RecordNotFound) do
-      Fibonacci.new(:n => nil).result
-    end
+  should "nil or blank algorithm" do
+    fib = Fibonacci.new({'algorithm' => nil})
+    assert fib.matrix?
+    fib = Fibonacci.new({'algorithm' => ''})
+    assert fib.matrix?
   end
 
   should "call CS::fibonacci and get result" do
@@ -54,26 +68,4 @@ class FibonacciTest < ActiveRecord::TestCase
     end
   end
 
-  should "nil algorithm" do
-    n = '6'
-
-    CS.stubs(:fibonacci).returns(8)
-    Fibonacci.new(:n => n, :algorithm => nil).result
-
-    assert_received(CS, :fibonacci) do |expects|
-      expects.with(n.to_i)
-    end
-  end
-
-  should "blank algorithm" do
-    n = '6'
-
-    CS.stubs(:fibonacci).returns(8)
-    Fibonacci.new(:n => n, :algorithm => '').result
-
-    assert_received(CS, :fibonacci) do |expects|
-
-      expects.with(n.to_i)
-    end
-  end
 end
