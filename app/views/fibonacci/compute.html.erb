@@ -1,12 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head><% @page_title = "Fibonacci Number Generator" %></head>
-<body>
-  <%= render :partial => 'fibonacci', :object => @fibonacci %>
+<% @page_title = "Fibonacci Number Generator" %>
+<%= render :partial => 'fibonacci', :object => @fibonacci %>
 <p />
 <div id="result">
 <%= @result -%>
 </div>
-
-</body>
-</html>
