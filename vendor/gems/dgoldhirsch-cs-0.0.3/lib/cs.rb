@@ -56,7 +56,7 @@ module CS
   # (*) Ruby's Matrix.**(k) works by computing partial = ((m**2)**2)... as far as possible,
   # and then multiplying partial by M**(the remaining number of times).  E.g., to compute
   # M**19, compute partial = ((M**2)**2) = M**16, and then compute partial*(M**3) = M**19.
-  # That's only 3 matrix multiplications of M to compute M*19.
+  # That's only 5 matrix multiplications of M to compute M*19.
   #
   # (**) "Faster" means on the workstations we tried, the matrix algorithm takes less total time
   # (see Ruby's Benchmark::bmbm) than a simple, additive loop.  But the space complexity

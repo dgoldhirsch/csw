@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.connect 'fibonacci/new', :controller => 'fibonacci', :action => 'new', :conditions => { :method => :get }
+  map.compute_fibonacci 'fibonacci/compute', :controller => 'fibonacci', :action => 'compute', :conditions => { :method => :post }
+  map.overview 'overview', :controller => 'overview', :action => 'overview'
+  map.root :controller => 'overview', :action => 'overview'
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -32,11 +38,6 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
-
-  map.connect 'fibonacci/new', :controller => 'fibonacci', :action => 'new', :conditions => { :method => :get }
-  map.compute_fibonacci 'fibonacci/compute', :controller => 'fibonacci', :action => 'compute', :conditions => { :method => :post }
-  map.connect 'csw', :controller => 'csw', :action => 'index'
-  
   # See how all your routes lay out with "rake routes"
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
