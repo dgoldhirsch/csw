@@ -38,4 +38,4 @@ class Fibonacci
   def to_s
     'n => ' + self.n.to_s + ', algorithm => ' + self.algorithm.to_s
   end
-nd
+end
